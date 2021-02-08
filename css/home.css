@@ -168,6 +168,12 @@ body * {
     transform: translateX(calc(-250px * 7));
   }
 }
+
+.reel-img {
+  height: 150px;
+  width: 150px;
+}
+
 .slider {
   background: white;
   height: 150px;
@@ -230,7 +236,18 @@ body * {
 
 @media (max-width: 1440px) {
   .cover-page {
-    height: 325px;
+    height: 450px;
+  }
+  .reel-img {
+    height: 100px;
+    width: 100px;
+  }
+  .slider {
+    height: 100px;
+  }
+  .slider::before,
+  .slider::after {
+    height: 100px;
   }
 }
 
@@ -245,7 +262,7 @@ body * {
     height: 350px;
   }
   .cover-page {
-    height: 300px;
+    height: 400px;
   }
 }
 
@@ -264,7 +281,7 @@ body * {
     display: none;
   }
   .cover-page {
-    height: 275px;
+    height: 300px;
     background-image: url(../images/Home_page/Cover_page_sm.png);
   }
 }
