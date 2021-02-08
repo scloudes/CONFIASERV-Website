@@ -1,0 +1,280 @@
+body * {
+  font-family: "Segoe UI";
+}
+
+.bg-image-container {
+  position: absolute;
+  z-index: -1;
+}
+
+.bg-image {
+  width: 100%;
+  height: 1015px;
+  object-fit: cover;
+}
+
+.logo-ct {
+  text-align: start;
+}
+
+.icons-ct {
+  text-align: end;
+}
+
+.icon {
+  min-width: 26px;
+  max-width: 32px;
+  min-height: 26px;
+  max-height: 32px;
+  fill: white;
+}
+
+.base {
+  align-items: baseline;
+}
+
+.tab-bg {
+  background: #012758;
+}
+
+.nav-link {
+  font-size: 18px;
+  color: white;
+  transition: font-size 0.5s;
+  -moz-transition: font-size 0.5s; /* Firefox 4 */
+  -webkit-transition: font-size 0.5s; /* Safari and Chrome */
+  -o-transition: font-size 0.5s;
+}
+
+.nav-text{
+  text-align: center;
+}
+
+.nav-link:hover {
+  font-size: 20px;
+  text-decoration: underline;
+  color: white;
+}
+
+.cover-page {
+  height: 500px;
+  background-image: url(../images/Home_page/Cover_page.png);
+  background-size: 100% 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+
+.ct-btn {
+  text-decoration: unset;
+  color: #727272;
+  background: white;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: #070707 1px solid;
+  border-radius: 50px;
+  margin-bottom: 25px;
+}
+
+.ct-btn:hover {
+  color: #0e0e0e;
+}
+
+.cp-btn {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  text-decoration: unset;
+  display: flex;
+  align-content: center;
+}
+
+.cp-btn:hover {
+  color: white;
+}
+
+.cp-icon {
+  min-width: 26px;
+  max-width: 48px;
+  min-height: 26px;
+  max-height: 48px;
+  fill: white;
+  margin-right: 10px;
+}
+
+.cp-sm {
+  display: none;
+}
+
+.modal-body {
+  height: 480px;
+}
+
+.white-bg {
+  background: white;
+}
+
+.blue-bg {
+  background: #012758;
+}
+
+.black-bg {
+  background: #2f2f30;
+}
+
+.sc-br {
+  border: #011530 1px solid;
+}
+
+.nb-container {
+  border: #707070 1px solid;
+}
+
+.honp {
+  height: 100%;
+}
+
+.dropdown-toggle::after { 
+  content: none; 
+} 
+
+.dropdown-menu{
+  background: #012758;
+  border: #011530 3px solid;
+}
+
+.dropdown-item, .dropdown-item:hover{
+  color: white;
+  background: unset;
+}
+
+
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+.slider {
+  background: white;
+  height: 150px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 150px;
+  position: absolute;
+  width: 75px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+
+.text-blue {
+  color: #13368a;
+}
+
+.cf-ct {
+  border: #13368a 3px solid;
+}
+
+.cf-btn {
+  background: #13368a;
+  border-radius: 30px;
+  width: 10rem;
+}
+
+.bor-bt {
+  border-bottom: white 2px solid;
+}
+
+.map {
+  width: 100%;
+  height: 400px;
+}
+
+@media (max-width: 576px) {
+  .logo-ct {
+    text-align: center;
+  }
+  .icons-ct,
+  .ct-btn {
+    display: none;
+  }
+  .cover-page {
+    height: 300px;
+    background-image: url(../images/Home_page/Cover_page_sm.png);
+  }
+}
+
+@media (max-width: 991px) {
+  .nav-text{
+    text-align: start;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cp-sm {
+    display: inline;
+  }
+  .cp-lg {
+    display: none;
+  }
+  .map {
+    height: 350px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

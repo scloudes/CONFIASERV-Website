@@ -1,0 +1,184 @@
+body * {
+  font-family: "Segoe UI";
+}
+
+.bg-image-container {
+  position: absolute;
+  z-index: -1;
+}
+
+.bg-image {
+  width: 100%;
+  height: 1015px;
+  object-fit: cover;
+}
+
+.logo-ct {
+  text-align: start;
+}
+
+.icons-ct {
+  text-align: end;
+}
+
+.icon {
+  min-width: 26px;
+  max-width: 32px;
+  min-height: 26px;
+  max-height: 32px;
+  fill: white;
+}
+
+.base {
+  align-items: baseline;
+}
+
+.tab-bg {
+  background: #012758;
+}
+
+.nav-link {
+  font-size: 18px;
+  color: white;
+  transition: font-size 0.5s;
+  -moz-transition: font-size 0.5s; /* Firefox 4 */
+  -webkit-transition: font-size 0.5s; /* Safari and Chrome */
+  -o-transition: font-size 0.5s;
+}
+
+.nav-link:hover {
+  font-size: 20px;
+  text-decoration: underline;
+  color: white;
+}
+
+.nav-text{
+  text-align: center;
+}
+
+.cover-page {
+  height: 500px;
+  background-image: url(../images/About_us_page/Cover_page.png);
+  background-size: 100% 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+
+.img-sm {
+  display: none;
+}
+
+.white-bg {
+  background: white;
+}
+
+.blue-bg {
+  background: #012758;
+}
+
+.sc-br {
+  border: #011530 1px solid;
+}
+
+.honp {
+  height: 100%;
+}
+
+.text-blue {
+  color: #13368a;
+}
+
+.cf-ct {
+  border: #13368a 3px solid;
+}
+
+.cf-btn {
+  background: #13368a;
+  border-radius: 30px;
+  width: 10rem;
+}
+
+.bor-bt {
+  border-bottom: white 2px solid;
+}
+
+.map {
+  width: 100%;
+  height: 400px;
+}
+
+.dropdown-toggle::after {
+  content: none;
+}
+
+.dropdown-menu {
+  background: #012758;
+  border: #011530 3px solid;
+}
+
+.dropdown-item,
+.dropdown-item:hover {
+  color: white;
+  background: unset;
+}
+
+@media (max-width: 576px) {
+  .logo-ct {
+    text-align: center;
+  }
+  .icons-ct {
+    display: none;
+  }
+  .cover-page {
+    height: 300px;
+    background-image: url(../images/About_us_page/Cover_page_sm.png);
+  }
+}
+
+@media (max-width: 767px) {
+  .map {
+    height: 350px;
+  }
+
+  .img-sm {
+    display: block;
+  }
+  .img-lg {
+    display: none;
+  }
+  .honp {
+    height: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav-text {
+    text-align: start;
+  }
+}
+
+@media (max-width: 1024px) {
+  .map {
+    height: 350px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
