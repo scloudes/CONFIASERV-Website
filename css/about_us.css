@@ -123,22 +123,9 @@ body * {
   background: unset;
 }
 
-@media (max-width: 576px) {
-  .logo-ct {
-    text-align: center;
-  }
-  .icons-ct {
-    display: none;
-  }
-  .cover-page {
-    height: 300px;
-    background-image: url(../images/About_us_page/Cover_page_sm.png);
-  }
-}
-
 @media (max-width: 1440px) {
   .cover-page {
-    height: 450px;
+    height: 325px;
   }
 }
 
@@ -147,7 +134,7 @@ body * {
     height: 350px;
   }
   .cover-page {
-    height: 400px;
+    height: 300px;
   }
 }
 
@@ -170,6 +157,19 @@ body * {
   }
   .honp {
     height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-ct {
+    text-align: center;
+  }
+  .icons-ct {
+    display: none;
+  }
+  .cover-page {
+    height: 275px;
+    background-image: url(../images/About_us_page/Cover_page_sm.png);
   }
 }
 

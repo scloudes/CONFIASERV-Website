@@ -170,6 +170,11 @@ body * {
   }
 }
 
+.reel-img {
+  height: 150px;
+  width: 150px;
+}
+
 .slider {
   background: white;
   height: 150px;
@@ -237,7 +242,18 @@ body * {
 
 @media (max-width: 1440px) {
   .cover-page {
-    height: 450px;
+    height: 325px;
+  }
+  .reel-img {
+    height: 100px;
+    width: 100px;
+  }
+  .slider {
+    height: 100px;
+  }
+  .slider::before,
+  .slider::after {
+    height: 100px;
   }
 }
 
@@ -252,7 +268,7 @@ body * {
     height: 350px;
   }
   .cover-page {
-    height: 400px;
+    height: 300px;
   }
 }
 
@@ -276,7 +292,7 @@ body * {
     display: none;
   }
   .cover-page {
-    height: 300px;
+    height: 275px;
     background-image: url(../images/Home_page/Cover_page_sm.png);
   }
 
